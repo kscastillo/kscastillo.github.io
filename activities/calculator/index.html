@@ -1,0 +1,77 @@
+<html>
+<head>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+ <!-- Custom CSS -->
+<link href="../../css/toggle-sidebar.css" rel="stylesheet">
+</head>
+  <body align="center">
+      <script>
+          function toNum(n){
+              return parseInt(n);
+          }
+          function add(n1, n2){
+              sum=toNum(n1) + toNum(n2);
+            output(sum);
+          }
+          function output(res){
+              alert(res);
+          }
+      </script>
+	  <script>
+          function toNum(n){
+              return parseInt(n);
+          }
+          function subtract(n1, n2){
+              sub=toNum(n1) - toNum(n2);
+            output(sub);
+          }
+          function output(res){
+              alert(res);
+          }
+      </script>
+	  <script>
+          function toNum(n){
+              return parseInt(n);
+          }
+          function divide(n1, n2){
+              dividedby=toNum(n1) / toNum(n2);
+            output(dividedby);
+          }
+          function output(res){
+              alert(res);
+          }
+      </script>
+	  <script>
+          function toNum(n){
+              return parseInt(n);
+          }
+          function multiply(n1, n2){
+              multi=toNum(n1) * toNum(n2);
+            output(multi);
+          }
+          function output(res){
+              alert(res);
+          }
+      </script>
+      <form name="calc">
+          Num1: <input type="text" id="num1"><br>
+          Num2: <input type="text" id="num2"><br>
+    </form>
+	<div class="container">
+    <div class="row">
+        
+    <button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
+	<button onclick="subtract(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
+	</div>
+	
+	<button onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
+	<button onclick="multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
+	        </div>
+    </div>
+</div>
+<!-- jQuery -->
+<script src="../../js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../../js/bootstrap.min.js"></script>
+  </body>
+</html>
